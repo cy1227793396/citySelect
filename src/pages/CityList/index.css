@@ -1,0 +1,8 @@
+.citylist{
+    height: calc(100vh - 20px);
+    padding-top: 45px;
+    overflow: hidden;
+}
+.navbar{
+    margin-top: -45px;
+}
