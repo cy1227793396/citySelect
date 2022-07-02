@@ -2,7 +2,7 @@ import React, { memo } from 'react'
 import { useState,useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import CitySelect from './components/CitySelect'
-import './style.js'
+
 export default memo(function Home() {
   const [search]=useSearchParams()
   const cityName=search.get('name')||''
@@ -10,7 +10,6 @@ export default memo(function Home() {
   return (
     <div>
       <CitySelect cityName={cityName}/>
-     
     </div>
   )
 })
